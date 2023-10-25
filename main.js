@@ -1,9 +1,10 @@
 let input = document.querySelector("#input");
 let inputButton = document.querySelector("#input-button");
 let form = document.querySelector("#form");
+let formContainer = document.querySelector(".form-container");
 
 let ul = document.createElement("ul");
-document.body.appendChild(ul);
+formContainer.appendChild(ul);
 
 let toDoList = [];
 toDoListCount = 0;
