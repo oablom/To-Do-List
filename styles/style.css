@@ -19,7 +19,7 @@ main {
 h1 {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
   font-size: 46px;
-  font-family: "Kalam", cursive;
+  font-family: "Macondo", cursive;
   text-align: center;
 }
 
@@ -31,6 +31,7 @@ form > div {
   justify-content: space-around;
   align-items: center;
   background: #eee;
+  padding: 0px 10px 0px 10px;
 }
 form > div > div {
   display: flex;
@@ -94,4 +95,10 @@ input {
 
 #input-button:hover {
   background-color: #bbb;
+}
+
+@media screen and (max-width: 380px) {
+  form > div {
+    height: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */
