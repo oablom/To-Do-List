@@ -28,9 +28,24 @@ form.addEventListener("submit", function (event) {
       li.append(liButton);
 
       liButton.addEventListener("click", () => {
-        ul.removeChild(li)[index];
-        toDoListCount--;
-        console.log(toDoListCount);
+        let isConfirmed = confirm(
+          `Är du säker på att du vill ta bort '${item}' från din lista?`
+        );
+        if (isConfirmed === true) {
+          ul.removeChild(li)[index];
+          toDoListCount--;
+          console.log(toDoListCount);
+        }
+      });
+      liButton.addEventListener("click", () => {
+        let isConfirmed = confirm(
+          `Är du säker på att du vill ta bort '${item}' från din lista?`
+        );
+        if (isConfirmed === true) {
+          ul.removeChild(li)[index];
+          toDoListCount--;
+          console.log(toDoListCount);
+        }
       });
       toDoList = [];
     });

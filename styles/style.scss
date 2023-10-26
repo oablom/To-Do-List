@@ -18,13 +18,14 @@ main {
 h1 {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
   font-size: 46px;
+  padding-top: 20px;
   font-family: "Macondo", cursive;
   //   font-family: "Indie Flower", cursive;
   text-align: center;
 }
-label strong {
-  //   font-family: "Courier New", Courier, monospace;
-}
+// label strong {
+//   //   font-family: "Courier New", Courier, monospace;
+// }
 
 form > div {
   height: 120px;
@@ -59,6 +60,8 @@ ul li:hover {
 }
 
 button {
+  cursor: pointer;
+  transition: 0.3s;
   position: absolute;
   right: 0;
   top: 0;
@@ -93,9 +96,6 @@ input {
   color: #555;
   float: left;
   text-align: center;
-
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 #input-button:hover {
@@ -105,5 +105,8 @@ input {
 @media screen and (max-width: 380px) {
   form > div {
     height: 150px;
+  }
+  h1 {
+    padding-top: 0px;
   }
 }
